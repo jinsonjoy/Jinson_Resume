@@ -536,7 +536,8 @@
                   <textarea class="form-control" name="message" rows="2" placeholder="Message" required></textarea>
                 </div>
                 <!-- hidden filed for e mail contain exact user form response time -->
-                <input type="hidden" id="user_time" name="user_time">
+                <input type="hidden" id="submitted_time" name="submitted_time">
+
 
                 <div class="col-md-12 text-center">
                   <button type="submit">Send Message</button>
@@ -625,10 +626,24 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
   const form = event.target;
 
-  // Add local datetime
+  // Generate local time (IST or user's timezone)
   const now = new Date();
-  document.getElementById("user_time").value = now.toLocaleString();
 
+  // Format nicely: 24 November 2025, 11:17 AM
+  const formattedTime = now.toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true
+  });
+
+  // Place into hidden input
+  document.getElementById("submitted_time").value = formattedTime + " IST";
+
+  // Send to Formspree
   fetch(form.action, {
     method: "POST",
     body: new FormData(form),
@@ -647,7 +662,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   });
 });
 </script>
-
 
 
 </body>
