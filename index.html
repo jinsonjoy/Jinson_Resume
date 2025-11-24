@@ -27,7 +27,6 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-<!--  <link href="{% static '/img/favicon.png' %}" rel="icon">-->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -61,7 +60,7 @@
 
       <a href="#" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+       
         <h1 class="sitename">Portfolio</h1>
       </a>
 
@@ -517,8 +516,8 @@
               </div>
             </div><!-- End Info Item -->
 
-            <form id="contactForm" action="{% url 'send_email' %}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-              {% csrf_token %}
+            <form id="contactForm" action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+              <!-- {% csrf_token %} -->
               <div class="row gy-4">
 
                 <div class="col-md-6">
