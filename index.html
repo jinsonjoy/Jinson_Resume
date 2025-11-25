@@ -4,64 +4,81 @@
 <!--Message Button Style-->
 <style>
   .custom-btn {
-    background-color: #0d6efd; /* Bootstrap primary color */
-    color: #fff; /* Text color */
-    font-size: 18px; /* Increase text size */
-    padding: 12px 30px; /* Increase button size */
-    border-radius: 8px; /* Rounded corners */
-    border: none; /* Remove border if needed */
-    transition: transform 0.2s; /* Smooth hover effect */
+    background-color: #0d6efd;
+    /* Bootstrap primary color */
+    color: #fff;
+    /* Text color */
+    font-size: 18px;
+    /* Increase text size */
+    padding: 12px 30px;
+    /* Increase button size */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: none;
+    /* Remove border if needed */
+    transition: transform 0.2s;
+    /* Smooth hover effect */
   }
 
   .custom-btn:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: #0b5ed7; /* Slightly darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    background-color: #0b5ed7;
+    /* Slightly darker shade on hover */
   }
 </style>
 
 <!--Image responsive grid on mobile-->
 <style>
-
-/* Fix DevFolio overlay */
-.hero::before {
+  /* Fix DevFolio overlay */
+  .hero::before {
     z-index: 0 !important;
-}
-/* 💻 DESKTOP — Manual position + size */
-.img-fix {
-    position: relative;               /* important */
+  }
+
+  /* 💻 DESKTOP — Manual position + size */
+  .img-fix {
+    position: relative;
+    /* important */
     z-index: 9999 !important;
 
     margin-top: -100px;
     margin-left: 640px;
 
-    width: 55vw;                      /* responsive desktop width */
-    max-width: 1050px;                /* max size */
-    height: auto !important;          /* perfect height adjustment */
-}
+    width: 55vw;
+    /* responsive desktop width */
+    max-width: 1050px;
+    /* max size */
+    height: auto !important;
+    /* perfect height adjustment */
+  }
 
-/* 📱 TABLET */
-@media (max-width: 992px) {
+  /* 📱 TABLET */
+  @media (max-width: 992px) {
     .img-fix {
-        margin-top: 0;
-        margin-left: 0;
-        width: 420px;   /* tablet size */
+      margin-top: 0;
+      margin-left: 0;
+      width: 420px;
+      /* tablet size */
     }
-}
+  }
 
-/* 📱 MOBILE */
-@media (max-width: 576px) {
+  /* 📱 MOBILE */
+  @media (max-width: 576px) {
     .img-fix {
-        margin-top: 20px !important;
-        margin-left: 0 !important;
+      margin-top: 20px !important;
+      margin-left: 0 !important;
 
-        width: 250px !important;   /* mobile size */
+      width: 250px !important;
+      /* mobile size */
 
-        display: block;
-        margin-right: auto;
-        margin-left: auto;         /* center the image */
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      /* center the image */
     }
-}
+  }
 </style>
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -75,7 +92,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -103,7 +122,7 @@
 
       <a href="#" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-       
+
         <h1 class="sitename">Portfolio</h1>
       </a>
 
@@ -124,25 +143,30 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background"
-             style="display: flex; align-items: center; justify-content: space-between; padding: 100px; overflow: hidden;">
+      style="display: flex; align-items: center; justify-content: space-between; padding: 100px; overflow: hidden;">
 
       <!-- Left side: text -->
       <div style="flex: 1; text-align: left;margin-top:-160px;margin-left:180px; z-index: 10;" data-aos="fade-up"
-           data-aos-delay="100">
+        data-aos-delay="100">
         <h2 style="font-size: 48px; font-weight: 700;color: white;">I AM JINSON K J</h2>
         <p style="font-size: 20px; margin-top: 10px;color: white;">
           <span class="typed"
-                data-typed-items="Python Full-Stack Web Developer, Freelancer, Front-End Developer, Back-End Developer"></span>
+            data-typed-items="Python Full-Stack Web Developer, Freelancer, Front-End Developer, Back-End Developer"></span>
         </p>
       </div>
 
 
       <!-- Right side: image -->
-      <div style="flex: 1; display: flex; justify-content: flex-end;">
+      <!-- <div style="flex: 1; display: flex; justify-content: flex-end;">
         <img src="static/assets/img/dp.png"
              alt="Profile"
              data-aos="fade-in"
              style="border-radius: 10px; object-fit: contain;">
+      </div> -->
+
+      <div style="flex: 1; display: flex; justify-content: flex-end;">
+        <img src="{% static 'assets/img/dp.png' %}" alt="Profile" data-aos="fade-in" class="img-fix"
+          style="border-radius: 10px; object-fit: contain;">
       </div>
 
 
@@ -163,7 +187,8 @@
 
             <div class="row justify-content-between gy-4">
               <div class="col-lg-5" style="position: relative; z-index: 20;">
-                <img style="position: relative; z-index: 20; border-radius: 10px;height:250px;margin-top:10px" src="static/assets/img/dp.png" class="img-fluid" alt="">
+                <img style="position: relative; z-index: 20; border-radius: 10px;height:250px;margin-top:10px"
+                  src="static/assets/img/dp.png" class="img-fluid" alt="">
               </div>
               <div style="margin-top:30px" class="col-lg-7 about-info">
                 <p><strong>Name: </strong> <span>JINSON K J</span></p>
@@ -181,28 +206,32 @@
               <div class="progress" style="width: 100%;">
                 <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
                 <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
                 <span class="skill"><span>JavaScript</span> <i class="val">85%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
                 <span class="skill"><span>Python</span> <i class="val">95%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div><!-- End Skills Item -->
 
@@ -211,7 +240,7 @@
 
           <div class="col-md-6">
             <div class="about-me">
-<!--              <h4>About me</h4>-->
+              <!--              <h4>About me</h4>-->
               <p style="text-align: justify;">
                 Dynamic and results-oriented software professional with expertise in Python, Django, React, and SQL,
                 complemented by a solid foundation in web development and data management. Highly proficient in MS
@@ -252,7 +281,11 @@
 
             <div class="resume-item pb-0">
               <h4>Jinson k j</h4>
-              <p><em>Creative and detail-oriented Front-End Web Developer with expertise in building responsive, engaging, and intuitive user interfaces. Skilled in translating design concepts into high-quality, functional web applications while ensuring seamless user experiences. Adept at collaborating with cross-functional teams, optimizing performance, and applying modern web technologies to deliver innovative solutions.</em></p>
+              <p><em>Creative and detail-oriented Front-End Web Developer with expertise in building responsive,
+                  engaging, and intuitive user interfaces. Skilled in translating design concepts into high-quality,
+                  functional web applications while ensuring seamless user experiences. Adept at collaborating with
+                  cross-functional teams, optimizing performance, and applying modern web technologies to deliver
+                  innovative solutions.</em></p>
               <ul>
                 <li>Kaitharan House , Alangad p o , Kottappuram</li>
                 <li>+91 81 39 89 39 89</li>
@@ -267,9 +300,12 @@
               <p><em>Luminar Technolab, Kakkanad, India</em></p>
 
               <ul>
-                <li> <strong> Programming:</strong> Performance to handle large databases.Developed real-world projects.</li>
-                <li> <strong>Front-End Development:</strong> Expertise in creating responsive, high-performance user interfaces.</li>
-                <li> <strong>Back-End Development:</strong> Expert in crafting robust, high-performance, and scalable back-end systems.</li>
+                <li> <strong> Programming:</strong> Performance to handle large databases.Developed real-world projects.
+                </li>
+                <li> <strong>Front-End Development:</strong> Expertise in creating responsive, high-performance user
+                  interfaces.</li>
+                <li> <strong>Back-End Development:</strong> Expert in crafting robust, high-performance, and scalable
+                  back-end systems.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -277,7 +313,10 @@
               <h4>B COM - Computer Application</h4>
               <h5> April - 2018</h5>
               <p><em>Lakshmi School of management, North Paravur, India</em></p>
-              <p>Completed a Bachelor of Commerce in Computer Applications, gaining a strong foundation in accounting, business management, and information technology. Developed analytical, problem-solving, and software skills while participating in various academic and extracurricular activities that enhanced teamwork and leadership abilities.</p>
+              <p>Completed a Bachelor of Commerce in Computer Applications, gaining a strong foundation in accounting,
+                business management, and information technology. Developed analytical, problem-solving, and software
+                skills while participating in various academic and extracurricular activities that enhanced teamwork and
+                leadership abilities.</p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item pb-0">
@@ -327,8 +366,8 @@
             <h3 class="resume-title pb-0">Projects</h3>
             <div class="resume-item">
               <p><em><strong>Hospital Management System:</strong>To automate Hospital workflows, enable seamless
-                coordination between staff and patients,
-                and improve overall efficiency and service quality. & mid scale enterprises. Tech: Python.</em></p>
+                  coordination between staff and patients,
+                  and improve overall efficiency and service quality. & mid scale enterprises. Tech: Python.</em></p>
               <ul>
                 <li><strong>Vison:</strong> Automate and streamline hospital workflows</li>
                 <li><strong>Patient Management:</strong> Registration, EMR/EHR, history tracking.</li>
@@ -339,27 +378,35 @@
               </ul>
 
               <p><em><strong>E-Commerce Platform for Fruits, Vegetables & Sweets:</strong>Implementing product
-                catalog,cart & Checkout,Payment
-                gateway, Admin analytics, Stock control,Secure User Authentication, role based-Access, Category based
-                product management.
-              </em></p>
+                  catalog,cart & Checkout,Payment
+                  gateway, Admin analytics, Stock control,Secure User Authentication, role based-Access, Category based
+                  product management.
+                </em></p>
               <ul>
-                <li><strong>Shopping & Checkout:</strong>Developed cart functionality, secure checkout, and integrated payment gateway.</li>
-                <li><strong>Admin & Analytics:</strong> Built role-based access for admins with dashboards for analytics, inventory, and sales tracking.</li>
-                <li><strong>User Experience:</strong>  Implemented secure user authentication and ensured smooth, responsive, and intuitive navigation for customers.</li>
+                <li><strong>Shopping & Checkout:</strong>Developed cart functionality, secure checkout, and integrated
+                  payment gateway.</li>
+                <li><strong>Admin & Analytics:</strong> Built role-based access for admins with dashboards for
+                  analytics, inventory, and sales tracking.</li>
+                <li><strong>User Experience:</strong> Implemented secure user authentication and ensured smooth,
+                  responsive, and intuitive navigation for customers.</li>
               </ul>
 
               <p><em><strong>Electronics E-Commerce System:</strong>Build an online platform for purchasing electronic
-                products, enabling users to browse,
-                filter, and buy items easily, while ensuring a smooth shopping experience for customers and efficient
-                management for the
-                platform.</em></p>
+                  products, enabling users to browse,
+                  filter, and buy items easily, while ensuring a smooth shopping experience for customers and efficient
+                  management for the
+                  platform.</em></p>
               <ul>
-                <li><strong>Vison:</strong>  Streamline online electronics shopping with user-friendly interfaces and secure transactions.</li>
-                <li><strong>Product histoManagement: </strong>  Display products with details, search and filter by category.</li>
-                <li><strong>Shopping Cart & Checkout:</strong> Add/remove products, view cart summary, update quantities, and place orders.</li>
-                <li><strong>User Management: </strong> Login, logout, and user registration with secure authentication</li>
-                <li><strong>Payment Integration:</strong> Secure payment processing with confirmation and order summary.</li>
+                <li><strong>Vison:</strong> Streamline online electronics shopping with user-friendly interfaces and
+                  secure transactions.</li>
+                <li><strong>Product histoManagement: </strong> Display products with details, search and filter by
+                  category.</li>
+                <li><strong>Shopping Cart & Checkout:</strong> Add/remove products, view cart summary, update
+                  quantities, and place orders.</li>
+                <li><strong>User Management: </strong> Login, logout, and user registration with secure authentication
+                </li>
+                <li><strong>Payment Integration:</strong> Secure payment processing with confirmation and order summary.
+                </li>
 
               </ul>
 
@@ -379,7 +426,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Dedicated to providing high-quality solutions with efficiency, precision, and a focus on user satisfaction.</p>
+        <p>Dedicated to providing high-quality solutions with efficiency, precision, and a focus on user satisfaction.
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -394,7 +442,8 @@
               <a href="#" class="stretched-link">
                 <h3>Front-End Development</h3>
               </a>
-              <p>Design and implement responsive, interactive, and user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React or Vue.js.</p>
+              <p>Design and implement responsive, interactive, and user-friendly interfaces using HTML, CSS, JavaScript,
+                and modern frameworks like React or Vue.js.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -406,7 +455,8 @@
               <a href="#" class="stretched-link">
                 <h3>Back-End Development</h3>
               </a>
-              <p>Build robust and scalable server-side applications, APIs, and databases using Python, Django, Node.js, SQL, or NoSQL solutions.</p>
+              <p>Build robust and scalable server-side applications, APIs, and databases using Python, Django, Node.js,
+                SQL, or NoSQL solutions.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -418,7 +468,8 @@
               <a href="#" class="stretched-link">
                 <h3>Full-Stack Web Development</h3>
               </a>
-              <p>Deliver end-to-end web solutions combining front-end and back-end development, ensuring seamless user experiences and efficient server performance.</p>
+              <p>Deliver end-to-end web solutions combining front-end and back-end development, ensuring seamless user
+                experiences and efficient server performance.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -430,7 +481,8 @@
               <a href="#" class="stretched-link">
                 <h3>eCommerce Solutions</h3>
               </a>
-              <p>Develop custom eCommerce platforms with product management, secure checkout, payment integration, and analytics for optimized business operations.</p>
+              <p>Develop custom eCommerce platforms with product management, secure checkout, payment integration, and
+                analytics for optimized business operations.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -443,7 +495,8 @@
               <a href="#" class="stretched-link">
                 <h3>Web Application Maintenance</h3>
               </a>
-              <p>Provide ongoing support, debugging, updates, and optimization to keep web applications secure, fast, and fully functional.</p>
+              <p>Provide ongoing support, debugging, updates, and optimization to keep web applications secure, fast,
+                and fully functional.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -456,7 +509,8 @@
               <a href="#" class="stretched-link">
                 <h3>API Development & Integration</h3>
               </a>
-              <p>Create and integrate RESTful or GraphQL APIs for seamless communication between web applications, mobile apps, and third-party services.</p>
+              <p>Create and integrate RESTful or GraphQL APIs for seamless communication between web applications,
+                mobile apps, and third-party services.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -478,29 +532,29 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-<!--              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>-->
-<!--              <p>Clients</p>-->
+              <!--              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>-->
+              <!--              <p>Clients</p>-->
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-<!--              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>-->
-<!--              <p>Projects</p>-->
+              <!--              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>-->
+              <!--              <p>Projects</p>-->
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-<!--              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>-->
-<!--              <p>Hours Of Support</p>-->
+              <!--              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>-->
+              <!--              <p>Hours Of Support</p>-->
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-<!--              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>-->
-<!--              <p>Awards</p>-->
+              <!--              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>-->
+              <!--              <p>Awards</p>-->
             </div>
           </div><!-- End Stats Item -->
 
@@ -557,7 +611,8 @@
               </div>
             </div><!-- End Info Item -->
 
-            <form id="contactForm" action="https://formspree.io/f/mblerzgq" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+            <form id="contactForm" action="https://formspree.io/f/mblerzgq" method="post" class="php-email-form"
+              data-aos="fade-up" data-aos-delay="300">
               <!-- {% csrf_token %} -->
               <div class="row gy-4">
 
@@ -600,7 +655,8 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span>
+        </p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://github.com/jinsonjoy"><i class="bi bi-github"></i></a>
@@ -615,7 +671,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -635,8 +692,8 @@
   <!-- Main JS File -->
   <script src="static/assets/js/main.js"></script>
 
-<!--script for email success-->
-<!-- <script>
+  <!--script for email success-->
+  <!-- <script>
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -661,48 +718,48 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 </script> -->
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-  const form = event.target;
+      const form = event.target;
 
-  // Generate local time (IST or user's timezone)
-  const now = new Date();
+      // Generate local time (IST or user's timezone)
+      const now = new Date();
 
-  // Format nicely: 24 November 2025, 11:17 AM
-  const formattedTime = now.toLocaleString("en-IN", {
-    timeZone: "Asia/Kolkata",
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true
-  });
+      // Format nicely: 24 November 2025, 11:17 AM
+      const formattedTime = now.toLocaleString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        day: "2-digit",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      });
 
-  // Place into hidden input
-  document.getElementById("submitted_time").value = formattedTime + " IST";
+      // Place into hidden input
+      document.getElementById("submitted_time").value = formattedTime + " IST";
 
-  // Send to Formspree
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-    headers: { "Accept": "application/json" }
-  })
-  .then(response => {
-    if (response.ok) {
-      alert("Your message has been sent successfully!");
-      form.reset();
-    } else {
-      alert("Oops! Something went wrong.");
-    }
-  })
-  .catch(error => {
-    alert("Unable to send message. Please try again.");
-  });
-});
-</script>
+      // Send to Formspree
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      })
+        .then(response => {
+          if (response.ok) {
+            alert("Your message has been sent successfully!");
+            form.reset();
+          } else {
+            alert("Oops! Something went wrong.");
+          }
+        })
+        .catch(error => {
+          alert("Unable to send message. Please try again.");
+        });
+    });
+  </script>
 
 
 </body>
