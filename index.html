@@ -19,6 +19,49 @@
   }
 </style>
 
+<!--Image responsive grid on mobile-->
+<style>
+
+/* Fix DevFolio overlay */
+.hero::before {
+    z-index: 0 !important;
+}
+/* 💻 DESKTOP — Manual position + size */
+.img-fix {
+    position: relative;               /* important */
+    z-index: 9999 !important;
+
+    margin-top: -100px;
+    margin-left: 640px;
+
+    width: 55vw;                      /* responsive desktop width */
+    max-width: 1050px;                /* max size */
+    height: auto !important;          /* perfect height adjustment */
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+    .img-fix {
+        margin-top: 0;
+        margin-left: 0;
+        width: 420px;   /* tablet size */
+    }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+    .img-fix {
+        margin-top: 20px !important;
+        margin-left: 0 !important;
+
+        width: 250px !important;   /* mobile size */
+
+        display: block;
+        margin-right: auto;
+        margin-left: auto;         /* center the image */
+    }
+}
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -84,7 +127,7 @@
              style="display: flex; align-items: center; justify-content: space-between; padding: 100px; overflow: hidden;">
 
       <!-- Left side: text -->
-      <div style="flex: 1; text-align: left;margin-top:-160px;margin-left:200px; z-index: 10;" data-aos="fade-up"
+      <div style="flex: 1; text-align: left;margin-top:-160px;margin-left:180px; z-index: 10;" data-aos="fade-up"
            data-aos-delay="100">
         <h2 style="font-size: 48px; font-weight: 700;color: white;">I AM JINSON K J</h2>
         <p style="font-size: 20px; margin-top: 10px;color: white;">
@@ -99,7 +142,7 @@
         <img src="static/assets/img/dp.png"
              alt="Profile"
              data-aos="fade-in"
-             style="margin-top:-50px;width:750px;margin-left:740px; height: auto; border-radius: 10px; z-index: 10; object-fit: contain;">
+             style="border-radius: 10px; object-fit: contain;">
       </div>
 
 
@@ -125,17 +168,15 @@
               <div style="margin-top:30px" class="col-lg-7 about-info">
                 <p><strong>Name: </strong> <span>JINSON K J</span></p>
                 <p><strong>Profile: </strong> <span>PYTHON FULL-STACK WEB DEVELOPER</span></p>
-                <p><strong>Degree: </strong> <span>BACHELOR'S DEGREE</span></p>
                 <p><strong>Date of Birth: </strong> <span>03-10-1996</span></p>
-                <p><strong>City: </strong> <span>ALUVA</span></p>
                 <p><strong>Email: </strong> <span>jinsonjoy0001@gmail.com</span></p>
                 <p><strong>Phone: </strong> <span>+ 91 81 39 89 39 89</span></p>
               </div>
             </div>
 
-            <div style="margin-top:160px; align-items: center;width:1100px;margin-left:80px" class="skills-content skills-animation">
+            <div style="margin-top:40px; align-items: center;" class="skills-content skills-animation">
 
-              <h5 style="text-align:center;padding-top:-10px">Skills</h5>
+              <h5 style="text-align:center;padding-top:-15px">Skills</h5>
 
               <div class="progress" style="width: 100%;">
                 <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
