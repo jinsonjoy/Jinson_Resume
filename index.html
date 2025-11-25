@@ -27,7 +27,52 @@
     /* Slightly darker shade on hover */
   }
 </style>
+<style>
+  /* Limit total website width to 1200px but keep responsive */
+.container,
+.container-xl,
+.container-lg,
+.container-md {
+    max-width: 1200px !important;
+}
 
+/* Hero section fix: center layout & responsive */
+#hero {
+    padding: 80px 0 !important;
+}
+
+#hero .left-content {
+    margin-left: 0 !important;
+    margin-top: -80px;
+}
+
+#hero .profile-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-left: 0 !important;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 991px) {
+
+    #hero {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+    }
+
+    #hero .left-content {
+        margin-top: 0 !important;
+    }
+
+    #hero .profile-img {
+        margin: 20px auto 0 auto !important;
+        max-width: 350px !important;
+    }
+}
+
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
