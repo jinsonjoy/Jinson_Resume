@@ -26,7 +26,58 @@
     background-color: #0b5ed7;
     /* Slightly darker shade on hover */
   }
+
+  /* Container to crop the hero image */
+  .hero-image-container {
+    width: 600px; /* Set a width for the container */
+    height: 700px; /* Set a height to crop the image */
+    overflow: hidden; /* Hide the part of the image that overflows */
+    border-radius: 10px; /* Apply border-radius to the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+  }
+
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    #hero {
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px; /* Adjust gap for smaller screens */
+      padding: 0px 20px !important; /* Add some padding */
+      min-height:fit-content;
+    }
+
+    .hero-image-container {
+      width: 70vw; /* Make image container responsive */
+      height: auto; /* Adjust height automatically */
+      padding-top: 0; /* Remove top padding */
+    }
+    
+    .hero-title {
+      font-size: 32px; /* Smaller font size for mobile */
+    }
+
+    .hero-subtitle {
+      font-size: 18px; /* Slightly smaller font size for mobile */
+    }
+  }
+
+  .hero-text-container {
+    flex: 0 1 auto;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .hero-title {
+    font-size: 48px; font-weight: 700; color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 20px; margin-top: 10px; color: white;
+  }
 </style>
+
 
 <head>
   <meta charset="utf-8">
@@ -92,23 +143,22 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background"
-      style="display: flex; align-items: center; justify-content: space-between; padding: 100px; overflow: hidden;">
+      style="display:flex; align-items:center; justify-content:center; padding:0px ; overflow: hidden; gap: 50px;">
+      
+
 
       <!-- Left side: text -->
-      <div style="flex: 1; text-align: left;margin-top:-160px;margin-left:200px; z-index: 10;" data-aos="fade-up"
-        data-aos-delay="100">
-        <h2 style="font-size: 48px; font-weight: 700;color: white;">I AM JINSON K J</h2>
-        <p style="font-size: 20px; margin-top: 10px;color: white;">
+      <div class="hero-text-container" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="hero-title">I AM JINSON K J</h2>
+        <p class="hero-subtitle">
           <span class="typed"
             data-typed-items="Python Full-Stack Web Developer, Freelancer, Front-End Developer, Back-End Developer"></span>
         </p>
       </div>
 
-
       <!-- Right side: image -->
-      <div style="flex: 1; display: flex; justify-content: flex-end;">
-        <img src="static/assets/img/dp.png" alt="Profile" data-aos="fade-in"
-          style="margin-top:-50px;width:750px;margin-left:740px; height: auto; border-radius: 10px; z-index: 10; object-fit: contain;">
+      <div class="hero-image-container" data-aos="fade-in">
+        <img src="static/assets/img/dp.png" alt="Profile" style="width: 100%; height: auto;">
       </div>
 
 
