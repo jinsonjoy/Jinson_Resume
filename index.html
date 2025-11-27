@@ -55,8 +55,10 @@
     }
     
     .hero-title {
-      font-size: 32px; /* Smaller font size for mobile */
-      white-space: nowrap; /* Prevent text from wrapping */
+      /* Use clamp for a responsive font size */
+      /* min size, preferred size (scales with viewport), max size */
+      font-size: clamp(24px, 8vw, 32px);
+      white-space: nowrap; /* Keep text on one line */
     }
 
     .hero-subtitle {
