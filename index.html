@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!-- Button Styles -->
-<style>
+<!-- <style>
   .hero-btn {
     background-color: #0d6efd;
     /* Bootstrap primary color */
@@ -100,9 +100,123 @@
   .hero-subtitle {
     font-size: 20px; margin-top: 10px; color: white;
   }
+</style> -->
+
+<style>
+  /* Hero Section Fix */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 20px;
+  min-height: 100vh;
+  flex-wrap: wrap; /* Ensures stacking on smaller screens */
+}
+
+/* Left Text */
+.hero-text-container {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  color: white;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: clamp(16px, 3vw, 22px);
+  margin-top: 10px;
+  color: white;
+}
+
+/* Buttons */
+.hero-btn {
+  margin: 10px;
+}
+
+/* Right Image Container */
+.hero-image-container {
+  flex: 1;
+  max-width: 1200px;
+  max-height: 800px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-image-container {
+    max-width: 300px;
+    padding: 0;
+  }
+  
+}
+
 </style>
+<style>
+  .hero-btn {
+    background-color: #0d6efd;
+    /* Bootstrap primary color */
+    color: #fff;
+    font-size: 16px; /* Smaller font size */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 10px 25px; /* Reduced padding for a smaller button */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: none;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    margin: 0 10px; /* Add some space between buttons */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* A more subtle shadow */
+  }
 
+  .hero-btn:hover {
+    transform: translateY(-2px);
+    /* Lift effect on hover */
+    background-color: #0b5ed7;
+    /* Slightly darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
 
+  .hero-btn:active {
+    transform: translateY(0);
+    /* Reset position on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Reset shadow on click */
+  }
+
+  /* Specific style for Download CV button */
+  .hero-btn.download-cv {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+
+  .hero-btn.download-cv:hover {
+    background-color: #fff;
+    color: #0d6efd;
+  }
+
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -166,8 +280,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background"
-      style="display:flex; align-items:center; justify-content:center; padding:0px ; overflow: hidden; gap: 0px;height: 100vh;">
+    <section id="hero" class="hero section dark-background">
       
 
 
