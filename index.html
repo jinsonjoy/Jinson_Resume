@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Message Button Style-->
+<!-- Button Styles -->
 <style>
-  .custom-btn {
+  .hero-btn {
     background-color: #0d6efd;
     /* Bootstrap primary color */
     color: #fff;
-    /* Text color */
-    font-size: 18px;
-    /* Increase text size */
-    padding: 12px 30px;
-    /* Increase button size */
-    border-radius: 8px;
+    font-size: 16px; /* Smaller font size */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 10px 25px; /* Reduced padding for a smaller button */
+    border-radius: 5px;
     /* Rounded corners */
     border: none;
-    /* Remove border if needed */
-    transition: transform 0.2s;
-    /* Smooth hover effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    margin: 0 10px; /* Add some space between buttons */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* A more subtle shadow */
   }
 
-  .custom-btn:hover {
-    transform: scale(1.05);
-    /* Slightly enlarge on hover */
+  .hero-btn:hover {
+    transform: translateY(-2px);
+    /* Lift effect on hover */
     background-color: #0b5ed7;
     /* Slightly darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+
+  .hero-btn:active {
+    transform: translateY(0);
+    /* Reset position on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Reset shadow on click */
+  }
+
+  /* Specific style for Download CV button */
+  .hero-btn.download-cv {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+
+  .hero-btn.download-cv:hover {
+    background-color: #fff;
+    color: #0d6efd;
   }
 
   /* Container to crop the hero image */
@@ -32,13 +50,14 @@
     width: 900px; /* Set a width for the container */
     height: 750px; /* Set a height to crop the image */
     overflow: hidden; /* Hide the part of the image that overflows */
-    border-radius: 10px; /* Apply border-radius to the container */
+    border-radius:0px; /* Apply border-radius to the container */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top:270px;
     margin-top:0px;
     margin-left:200px;
+    padding-bottom: 0px;
   }
 
   /* Responsive styles for mobile */
@@ -159,8 +178,8 @@
           <span class="typed"
             data-typed-items="Python Full-Stack Web Developer, Freelancer, Front-End Developer, Back-End Developer"></span>
         </p>
-        <button>Download C V</button>
-        <button>Contact Me</button>
+        <a href="static/assets/files/JINSON_K_J (3).pdf" download><button class="hero-btn download-cv">Download CV</button></a>
+        <a href="#contact"><button class="hero-btn">Get in Touch</button></a>
       </div>
 
       <!-- Right side: image -->
