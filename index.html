@@ -2,114 +2,14 @@
 <html lang="en">
 
 <!-- Button Styles -->
-<!-- <style>
-  .hero-btn {
-    background-color: #0d6efd;
-    /* Bootstrap primary color */
-    color: #fff;
-    font-size: 16px; /* Smaller font size */
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    padding: 10px 25px; /* Reduced padding for a smaller button */
-    border-radius: 5px;
-    /* Rounded corners */
-    border: none;
-    transition: all 0.3s ease; /* Smooth transition for all properties */
-    margin: 0 10px; /* Add some space between buttons */
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* A more subtle shadow */
-  }
-
-  .hero-btn:hover {
-    transform: translateY(-2px);
-    /* Lift effect on hover */
-    background-color: #0b5ed7;
-    /* Slightly darker shade on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-  }
-
-  .hero-btn:active {
-    transform: translateY(0);
-    /* Reset position on click */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Reset shadow on click */
-  }
-
-  /* Specific style for Download CV button */
-  .hero-btn.download-cv {
-    background-color: transparent;
-    border: 2px solid #fff;
-  }
-
-  .hero-btn.download-cv:hover {
-    background-color: #fff;
-    color: #0d6efd;
-  }
-
-  /* Container to crop the hero image */
-  .hero-image-container {
-    width: 900px; /* Set a width for the container */
-    height: 750px; /* Set a height to crop the image */
-    overflow: hidden; /* Hide the part of the image that overflows */
-    border-radius:0px; /* Apply border-radius to the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top:270px;
-    margin-top:0px;
-    margin-left:200px;
-    padding-bottom: 0px;
-  }
-
-  /* Responsive styles for mobile */
-  @media (max-width: 768px) {
-    #hero {
-      flex-direction: column; /* Stack items vertically */
-      gap: 20px; /* Adjust gap for smaller screens */
-      padding: 0px 20px !important; /* Add some padding */
-      min-height:fit-content;
-    }
-
-    .hero-image-container {
-      width: 70vw; /* Make image container responsive */
-      height: auto; /* Adjust height automatically */
-      padding-top: 0; /* Remove top padding */
-    }
-    
-    .hero-title {
-      /* Use clamp for a responsive font size */
-      /* min size, preferred size (scales with viewport), max size */
-      font-size: clamp(24px, 8vw, 32px);
-      white-space: nowrap; /* Keep text on one line */
-    }
-
-    .hero-subtitle {
-      font-size: 18px; /* Slightly smaller font size for mobile */
-    }
-  }
-
-  .hero-text-container {
-    flex: 0 1 auto;
-    text-align: center;
-    z-index: 10;
-  }
-
-  .hero-title {
-    font-size: 48px; font-weight: 700; color: white;
-  }
-
-  .hero-subtitle {
-    font-size: 20px; margin-top: 10px; color: white;
-  }
-</style> -->
-
 <style>
-  /* Hero Section Fix */
+/* Hero Section Fix */
 #hero {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px;
-  gap: 20px;
+  gap: 0px;
   min-height: 100vh;
   flex-wrap: wrap; /* Ensures stacking on smaller screens */
 }
@@ -143,10 +43,11 @@
 /* Right Image Container */
 .hero-image-container {
   flex: 1;
-  max-width: 1200px;
-  max-height: 400px;
+  max-width: 950px;
+  height: 800px;
   width: 100%;
   overflow: hidden;
+  margin-top: 0px;
 }
 
 .hero-image-container img {
@@ -169,10 +70,12 @@
     max-width: 300px;
     padding: 0;
   }
-  
 }
 
 </style>
+
+
+
 <style>
   .hero-btn {
     background-color: #0d6efd;
@@ -297,7 +200,7 @@
 
       <!-- Right side: image -->
       <div class="hero-image-container" data-aos="fade-in">
-        <img src="static/assets/img/dp.png" alt="Profile" style="width: 100%; height: auto;">
+        <img src="static/assets/img/jinsonimg.png" alt="Profile" style="width: 100%; height: auto;">
       </div>
 
 
